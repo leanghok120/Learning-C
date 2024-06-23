@@ -3,7 +3,7 @@ SRC = $(PROG).c
 OBJ = $(SRC:.c=.o)
 
 GCC = gcc
-INCS = -l/usr/include/X11/
+INCS = l/usr/include/X11/
 LIBS = -lX11
 
 LDFLAGS = ${LIBS}
