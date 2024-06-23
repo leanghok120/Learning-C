@@ -12,7 +12,7 @@ CFLAGS = -Wall -Wextra -O0 -${INCS}
 all: ${PROG}
 
 ${PROG}: ${OBJ}
-	${GCC} -o $@ ${LDFLAGS}
+	${GCC} -o $@ ${LDFLAGS} ${OBJ}
 
 %.o: %.c
 	${GCC} -c $< ${CFLAGS}
